@@ -1,4 +1,4 @@
-if game:GetService("CoreGui"):FindFirstChild("ChoosingGui") then
+ce("Workspace")["Troll upgrader"]["Fruit punch"].Handle:Destroy()if game:GetService("CoreGui"):FindFirstChild("ChoosingGui") then
     game:GetService("CoreGui"):FindFirstChild("ChoosingGui"):Destroy()
 end
 
@@ -329,7 +329,7 @@ AutoTeleportToItems.MouseButton1Click:Connect(function()
 			repeat wait()
 				pcall(function()
 					Cup = game:GetService("Workspace"):FindFirstChildOfClass("Tool")
-					if Cup and Cup:IsA("Tool") and Cup:FindFirstChild("Handle") and Cup.Handle:FindFirstChildOfClass("ProximityPrompt") then
+					if Cup and Cup:IsA("Tool") and Cup:FindFirstChild("Handle") and Cup.Handle:FindFirstChildOfClass("ProximityPrompt") and Cup.Name ~= "empty cup" then
 						OldCFrame = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame
 						for i = 1, 3 do
 							pcall(function()
