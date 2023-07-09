@@ -784,7 +784,7 @@ end)
 spawn(function()
 	while true do wait(1) --- Delete Glitch Cups
 		for i,v in pairs(game:GetService("Workspace"):GetChildren()) do
-			if v:IsA("Tool") and v.Name == "delicous!!" then
+			if v.Name == "delicous!!" or v.Name == "Ticking." then
 				v:Destroy()
 			end
 		end
