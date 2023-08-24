@@ -1,4 +1,7 @@
-ce("Workspace")["Troll upgrader"]["Fruit punch"].Handle:Destroy()if game:GetService("CoreGui"):FindFirstChild("ChoosingGui") then
+pcall(function()
+   game("Workspace")["Troll upgrader"]["Fruit punch"].Handle:Destroy()
+end)
+if game:GetService("CoreGui"):FindFirstChild("ChoosingGui") then
     game:GetService("CoreGui"):FindFirstChild("ChoosingGui"):Destroy()
 end
 
